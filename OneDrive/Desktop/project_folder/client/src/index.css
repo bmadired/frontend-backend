@@ -1,0 +1,49 @@
+/* Tailwind base setup */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 💠 Optional custom styles for your layout (you can keep or skip these) */
+body {
+  @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+/* Smooth fade-in animation for pages */
+.page-enter {
+  @apply opacity-0 translate-y-5;
+}
+
+.page-enter-active {
+  @apply opacity-100 translate-y-0 transition-all duration-500 ease-out;
+}
+
+/* Navbar shadow and hover effects */
+.navbar {
+  @apply bg-blue-600 text-white shadow-md;
+}
+
+.navbar a:hover {
+  @apply bg-blue-700 transition-colors duration-300;
+}
+
+/* Card hover effect for products */
+.product-card {
+  @apply bg-white rounded-xl shadow p-4 hover:shadow-lg hover:scale-[1.02] transition-all duration-200;
+}
+
+/* Button styles */
+.btn {
+  @apply px-4 py-2 rounded-md font-medium transition duration-200;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-danger {
+  @apply bg-red-500 text-white hover:bg-red-600;
+}
+
+.btn-success {
+  @apply bg-green-500 text-white hover:bg-green-600;
+}
